@@ -1,18 +1,21 @@
-function leftPad(value) {
+function padStartZeros(value, n) {
 
-    if (value >= 10) {
-        return value;
+    let stringConversion;
+    if (typeof value === "string") {
+        stringConversion = value;
+    } else {
+        stringConversion = String(value);
     }
 
-    return `0${value}`;
+    return stringConversion.padStart(n, '0');
 
 }
 
 function toStringByFormatting(source, delimiter = '-') {
 
     const year = source.getFullYear();
-    const month = leftPad(source.getMonth() + 1);
-    const day = leftPad(source.getDate());
+    const month = padStartZeros(source.getMonth() + 1, 2);
+    const day = padStartZeros(source.getDate(), 2);
 
     return [year, month, day].join(delimiter);
 
@@ -20,7 +23,7 @@ function toStringByFormatting(source, delimiter = '-') {
 
 function getTimeFormat( time ){
 
-    const strTime=String(time).padStart(6,'0');
+    const strTime=padStartZeros(time, 6);
 
     const micro = strTime.slice( 4, 6 );
     const sec = strTime.slice( 2, 4 );

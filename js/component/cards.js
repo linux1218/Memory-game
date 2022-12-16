@@ -50,19 +50,21 @@ function isCreateCard() {
 }
 
 function createCard(cardCount) {
+    let frameWorkName;
     for (let loopIdx = 0; loopIdx < (cardCount / 2); loopIdx++) {
-        let frameWorkName = framework[Math.floor(Math.random() * 6)];
+        const filteredFrameworks = framework.filter(eachFramework => eachFramework !== frameWorkName);
+        frameWorkName = filteredFrameworks[Math.floor(Math.random() * filteredFrameworks.length)];
         for (let loopIdxIn = 0; loopIdxIn < 2; loopIdxIn++) {
 
-            let memoryCard = document.createElement("div");
+            const memoryCard = document.createElement("div");
             memoryCard.classList.add("memory-card");
             memoryCard.dataset.framework = frameWorkName;
 
-            let frontFace = document.createElement('img');
+            const frontFace = document.createElement('img');
             frontFace.classList.add('front-face');
             frontFace.src = './img/' + `${frameWorkName}.svg`;
 
-            let backFace = document.createElement('img');
+            const backFace = document.createElement('img');
             backFace.classList.add('back-face');
             backFace.src = './img/js-badge.svg';
 
@@ -178,7 +180,7 @@ function disableCards() {
         saveScore();
         displayScore();
 
-        alert('성공');
+        setTimeout(() => alert('성공'), 500);
     }
 
     resetBoard();

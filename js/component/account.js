@@ -1,10 +1,8 @@
-function isLogin() {
+function isLoggedIn() {
 
     // if ((curAccount === undefined) || (curAccount === null) || (curAccount.length === 0)) {
-    if (!curAccount) {
-        return false;
-    }
-    return true;
+    return curAccount;
+
 
 }
 

@@ -3,7 +3,7 @@
 function gameController() {
 
     if (this.classList.contains('start-button')) {
-        if (!isLogin()) {
+        if (!isLoggedIn()) {
             alert('LogIn!!');
             return;
         }

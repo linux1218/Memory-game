@@ -41,24 +41,21 @@ function clearScore() {
 
 function displayScore() {
 
-    let scoreArea = document.querySelector('.record');
-    let ScoreDiv;
-    let ScoreDiv_Span, recordRow;
-
-
     if ((score === null) || (score === undefined)) {
         return;
     }
 
+    const scoreArea = document.querySelector('.record');
+
     clearScore();
 
     score.forEach(function (scoreInfo) {
-        ScoreDiv = document.createElement('div');
+        const ScoreDiv = document.createElement('div');
 
-        let time = getTimeFormat(scoreInfo.time);
-        recordRow = `${scoreInfo.account}  ${time}  ${scoreInfo.date}`;
+        const time = getTimeFormat(scoreInfo.time);
+        const recordRow = `${scoreInfo.account}  ${time}  ${scoreInfo.date}`;
 
-        ScoreDiv_Span = document.createElement('span');
+        const ScoreDiv_Span = document.createElement('span');
         ScoreDiv_Span.innerText = recordRow;
 
         ScoreDiv.append(ScoreDiv_Span);
@@ -71,7 +68,7 @@ function displayScore() {
 
 function saveScore() {
 
-    let newRecord = {};
+    const newRecord = {};
 
     newRecord.account = curAccount;
     newRecord.time = getCurTimer();
