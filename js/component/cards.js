@@ -51,7 +51,7 @@ function isCreateCard() {
 
 function createCard(cardCount) {
     for (let loopIdx = 0; loopIdx < (cardCount / 2); loopIdx++) {
-        let frameWorkName = framework[Math.floor(Math.random() * 6)];
+        let frameWorkName = framework[Math.floor(Math.random() * framework.length)];
         for (let loopIdxIn = 0; loopIdxIn < 2; loopIdxIn++) {
 
             const memoryCard = document.createElement("div");
