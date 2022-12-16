@@ -178,7 +178,7 @@ function disableCards() {
         saveScore();
         displayScore();
 
-        alert('성공');
+        setTimeout(() => alert('성공'), 500);
     }
 
     resetBoard();
