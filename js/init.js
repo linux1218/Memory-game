@@ -23,7 +23,7 @@ function initBoard() {
 
     resetBoard();
 
-    document.querySelector('.game-level-list').click(); // 시작은 강제로 2x2 이벤트 발생시킨다.
+    document.querySelector('.game-level-list[value="2"]').click(); // 시작은 강제로 2x2 이벤트 발생시킨다.
 }
 
 initBoard();
