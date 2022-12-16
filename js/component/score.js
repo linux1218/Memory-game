@@ -41,10 +41,11 @@ function clearScore() {
 
 function displayScore() {
 
-    const scoreArea = document.querySelector('.record');
     if ((score === null) || (score === undefined)) {
         return;
     }
+
+    const scoreArea = document.querySelector('.record');
 
     clearScore();
 
