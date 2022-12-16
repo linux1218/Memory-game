@@ -1,0 +1,13 @@
+.header-item {
+    display: flex;
+    padding: 100px 0px;
+    align-items: center;
+}
+
+.header-item > * {
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    height: 50px;
+
+}

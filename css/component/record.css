@@ -1,0 +1,17 @@
+.record {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.record > div{
+    margin: 10px 0px;
+}
+
+.record > div > span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Boogaloo", cursive;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>memory game</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body>
+<div class="container">
+
+    <div class="header-item header-account">
+        <input type="text" name="account" placeholder="Enter account">
+        <div>
+            <button class="account-button-list login-button">LogIn</button>
+            <button class="account-button-list logout-button">LogOut</button>
+        </div>
+
+    </div>
+
+
+    <div class="header-item header-start">
+        <div>
+            <button class="game-button-list start-button">Start</button>
+            <button class="game-button-list pause-button">Pause</button>
+            <button class="game-button-list reset-button">Reset</button>
+        </div>
+    </div>
+
+    <div class="header-item header-timer">
+        <div class="header-timer-clock">
+            <span id="min">00</span>:<span id="sec">00</span>:<span id="micro">00</span>
+        </div>
+    </div>
+
+    <div>
+<!--        <input type="text" name="interval" placeholder="Enter second">-->
+<!--        <span> : </span>-->
+<!--        <div class="header-timer-clock">00:00</div>-->
+    </div>
+
+    <div class="memory-game">
+        <div class="memory-game-level">
+            <button class="game-level-list" value="2">2x2</button>
+            <button class="game-level-list" value="4">4x4</button>
+            <button class="game-level-list" value="6">6x6</button>
+        </div>
+        <div class="memory-game-area">
+        </div>
+    </div>
+
+    <div class="record">
+    </div>
+
+
+</div>
+
+
+<script src="js/common.js"></script>
+<script src="js/component/score.js"></script>
+<script src="js/component/account.js"></script>
+<script src="js/component/timer.js"></script>
+<script src="js/component/cards.js"></script>
+<script src="js/game.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>memory game</title>-->
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<header>-->
+<!--    <div class="header-item header-account">-->
+<!--        <input type="text" name="account" placeholder="Enter account">-->
+<!--        <button value="none">LogIn</button>-->
+<!--    </div>-->
+
+<!--    <div class="header-item header-timer">-->
+<!--        <input type="text" name="interval" placeholder="Enter second">-->
+<!--        <div class="header-timer-clock">00:00</div>-->
+<!--    </div>-->
+
+<!--    <div class="header-item header-start">-->
+<!--        <button value="none">Start</button>-->
+<!--    </div>-->
+
+<!--    <div class="header-item header-cardRows">-->
+<!--        <input type="text" name="cardRows" placeholder="Enter CardRows">-->
+<!--        <span>카드 라인수</span>-->
+<!--    </div>-->
+
+<!--    <div class="header-item header-record">-->
+<!--        <span>Record 영역</span>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<div class="memory-game">-->
+<!--</div>-->
+
+<!--<script src="js/common.js"></script>-->
+<!--<script src="js/score.js"></script>-->
+<!--<script src="js/init.js"></script>-->
+<!--<script src="js/timer.js"></script>-->
+<!--<script src="js/cards.js"></script>-->
+<!--<script src="js/account.js"></script>-->
+
+<!--</body>-->
+<!--</html>-->

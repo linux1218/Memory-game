@@ -1,0 +1,26 @@
+@import "reset.css";
+@import "component/header.css";
+@import "component/account.css";
+@import "component/start.css";
+@import "component/timer.css";
+@import "component/card.css";
+@import "component/record.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+* {
+    padding :0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}

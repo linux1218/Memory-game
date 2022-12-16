@@ -1,0 +1,42 @@
+.header-account {
+    margin-left: 100px;
+    justify-content: right;
+}
+
+.header-account input {
+    border-radius: 15px;
+    /*margin-left: 10px;*/
+    padding-left: 10px;
+}
+
+.account-button-list {
+    border-radius: 15px;
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Boogaloo", cursive;
+}
+
+.header-account div {
+    padding: 0px;
+    width: 80px;
+    /*position: relative;*/
+}
+
+.login-button {
+    width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
+
+}
+
+.logout-button {
+    width: 80px;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    margin-left: 10px;
+}

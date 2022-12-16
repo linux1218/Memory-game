@@ -1,0 +1,9 @@
+.header-timer {
+    margin-right: 100px;
+    justify-content: left;
+}
+
+.header-timer > * {
+    font-size: 40px;
+    font-family: "Boogaloo", cursive;
+}
