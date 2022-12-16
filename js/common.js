@@ -1,6 +1,11 @@
 function padStartZeros(value, n) {
 
-    return value.padStart(n, '0');
+    let stringConversion;
+    if (typeof value !== "string") {
+        stringConversion = String(value);
+    }
+
+    return stringConversion.padStart(n, '0');
 
 }
 
