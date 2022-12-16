@@ -3,6 +3,8 @@ function padStartZeros(value, n) {
     let stringConversion;
     if (typeof value !== "string") {
         stringConversion = String(value);
+    } else {
+        stringConversion = value;
     }
 
     return stringConversion.padStart(n, '0');
